@@ -1,0 +1,161 @@
+{
+  "data":[
+    {
+     "utterances":["Bye","Ciao","Have a good day"],
+     "answer":"See you later. Bye!",
+     "pattern":"(bye|goodbye|ciao|see you later|have.*(a)*.*(good|nice|wonderful).*(day|evening|night|afternoon))",
+     "flags":"{e<=1}",
+     "type":"farewell"
+    }, 
+    {
+     "utterances":["Hello","Hi","Good day"],
+     "answer":"Hi There!",
+     "pattern":"(h(i|ello)(.*there)*)|(good.(day|evening|afternoon|morning))|(greeting(s)*)",
+     "flags":"{e<=1}",
+     "type":"greeting"
+    },   
+    {
+     "utterances":["What is Delphi?","Tell me about Delphi"],
+     "answer":"Delphi is a general-purpose programming language and a software product that uses the Delphi dialect of the Object Pascal programming language and provides an integrated development environment (IDE).",
+     "pattern":"What is (Delphi|it)|about Delphi",
+     "flags":"{e<=1}",
+     "type":""
+    },
+    {
+     "utterances":["What type of language is it?","What language is it?"],
+     "answer":"Delphi is a strongly typed high-level programming language, intended to be easy to use and originally based on the earlier Object Pascal language.",
+     "pattern":"(What)*(type|kind)*(language|kind)*(is)*(it|Delphi)*",
+     "flags":"{e<=1}",
+     "type":""
+    },
+    {
+     "utterances":["Is it object-oriented language?","Does it support object-oriented programming?"],
+     "answer":"Yes. Delphi's object orientation features only class- and interface-based polymorphism.",
+     "pattern":"(support(s)*.)*((object(-| )+oriented)|(OOP|oop))",
+     "flags":"{e<=1}",
+     "type":""
+    },
+    {
+     "utterances":["Delphi was developed by who?", "Who is Developer?", "Who developed Delphi?"],
+     "answer":"Delphi was originally developed by Borland as a rapid application development tool for Windows as the successor of Turbo Pascal.",
+     "pattern":"(Who)*.*(is|was|).(Develop(ed|er).(by)*)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Who owns Delphi today?","Who is the owner?","Who does Delphi belong to?"],
+     "answer":"It is currently developed and maintained by Embarcadero Technologies.",
+     "pattern":"((Delphi|it) (belong(s)*) to)|((the )*own(s *(it|delphi)*|er|ed by)*)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["What frameworks does Delphi support?", "Are there any frameworks?"],
+     "answer":"Delphi supports two application frameworks, VCL for Windows and FireMonkey (FMX) for cross-platform development.",
+     "pattern":"(support(s|ed)*)*.(framework(s)*).*(support(ed|s)*)*",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Tell about FireMonkey framework?","What is Firemonkey?", "What are firemonkey features?"],
+     "answer":"FireMonkey is a cross-platform GUI framework developed by Embarcadero Technologies. The GUI parts of FireMonkey are largely based on Direct3D and OpenGL. ",
+     "pattern":"((what is.*)|(about.*))*((firemonkey)(.*framework|.*feature(s)*)*)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["What platforms are supported?", "What are the target platforms?"],
+     "answer":"Delphi's compilers generate native code for Microsoft Windows, macOS, iOS, Android and Linux.",
+     "pattern":"platform(s)*.*|(target(ed)*|supported).platform(s)*S",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Is it compatible with 64 bit systems?","Are 64 bit systems supported?"],
+     "answer":"Both Delphi and C++Builder support the development of 64-bit Windows applications on either a Win64 development system or a native Win32 development system.",
+     "pattern":"((support(s)*)|able of|capable of).*64(-)*.*bit(s)*.(computing|programming|software.(development)*)*",
+     "flags":"{e<=1}",
+     "type":""
+    },
+    {
+     "utterances":["Does it support low-level programming?", "Is it capable of low-level programming?"],
+     "answer":"Delphi supports access to hardware and low-level programming, with the facility to incorporate code written in assembly language and other languages.",
+     "pattern":"(support(s)*|capable of)* *(low(-)* *level *(programming|development|access))",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["What are the compiler features?","What kind of compiler does it have?"],
+     "answer":"The compiler is optimizing and is a single-pass compiler.It can optionally compile to a single executable which does not require DLLs. ",
+     "pattern":"((kind|type).of )*(features.*)*compiler*.(features)*",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Are Strings immutable?","Does it use immutable strings?"],
+     "answer":"Delphi strings are not immutable, they are reference-counted and copy-on-write.",
+     "pattern":"((kind|type) of string(s)*)|(strings immutable|immutable strings)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Can Delphi generate DLLs?","Can you write DLLs in Delphi?"],
+     "answer":"Delphi can also generate standard DLLs, ActiveX DLLs, COM automation servers and Windows services.",
+     "pattern":"(can*|able*|does*).*(write|generate|compile|create|build).*DLL(s)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["What about backward compatibility?","Is new code backward compatible?"],
+     "answer":"Delphi is one of the languages where backward compatibility is close to 100%",
+     "pattern":"(code.)*backward.compatib(le|ility)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["How often is Delphi updated?", "When are new versions released?"],
+     "answer":"Since 2016, there have been new releases of Delphi every six months, with new platforms being added approximately every second release.",
+     "pattern":"(often*|when*|is*).*(updated(.often)*|gets updates|new.(version(s)*))(.released)*",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["What famous companies use Delphi?","Is it used by big companies?", "Any companies use delphi?"],
+     "answer":"Hitachi Ltd, United Parcel Service, Inc., NEC Corporation, Pfizer, Inc., Caterpillar, Inc., and more.",
+     "pattern":"(compan(y|ies))*.(use(d)*(.by.*(companies))*).(Delphi|it)*",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["List software that is written in Delphi.","Is there any software created in delphi?"],
+     "answer":"Nero Burning Rom, Skype, InstallAware, InnoSetup, WinRAR, Partition Magic, Panda Titanium Antivirus, Aida64, Ultra ISO. ",
+     "pattern":"(software|application(s)*|program(s)*).*((written|made|done|created|designed|built).(in|with)).(Delphi|it)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Are there any games written in Delphi?","What games are developed in Delphi?"],
+     "answer":"Some games are: Space Rangers, Abra Academy, Age of Wonders",
+     "pattern":"(game(s)*).*((written|made|done|created|developed|designed).(in|with)).(Delphi|it)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Can you create a web page with Delphi?","Does it support MVC?"],
+     "answer":"Delphi comes with powerful tools for web development. Additionally such frameworks as TMS Webcore, IntraWeb, and DelphiMVCFramework can be used.",
+     "pattern":"(create|write|build|make|design|support(s)*).*((web|html|mvc) *(page(s)*|application(s)*)* *(development)*)",
+     "flags":"{e<=1}",
+     "type":""
+    },    
+    {
+     "utterances":["Does it work with databases?","What databases are supported?"],
+     "answer":"FireDAC is a Universal Data Access library for developing applications for multiple devices, connected to enterprise databases. With its powerful universal architecture, FireDAC enables native high-speed direct access from Delphi and C++Builder to InterBase, SQLite, MySQL, SQL Server, Oracle, PostgreSQL, DB2, SQL Anywhere, Advantage DB, Firebird, Access, Informix, DataSnap and more, including the NoSQL Database MongoDB.",
+     "pattern":"(((work with|access))*.(database(s)*).(development)*).*(support(ed|s)*)*",
+     "flags":"{e<=1}",
+     "type":""
+    }    
+
+  ]
+
+
+}
